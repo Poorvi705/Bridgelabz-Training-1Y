@@ -1,0 +1,46 @@
+// Interface
+interface Payment {
+    void pay(double amount);
+}
+
+// UPI class
+class UPI implements Payment {
+
+    @Override
+    public void pay(double amount) {
+        System.out.println("Payment of ₹" + amount + " made using UPI.");
+    }
+}
+
+// Credit Card class
+class CreditCard implements Payment {
+
+    @Override
+    public void pay(double amount) {
+        System.out.println("Payment of ₹" + amount + " made using Credit Card.");
+    }
+}
+
+// Wallet class
+class Wallet implements Payment {
+
+    @Override
+    public void pay(double amount) {
+        System.out.println("Payment of ₹" + amount + " made using Wallet.");
+    }
+}
+
+// Main class
+public class DigitalPaymentSystem {
+
+    public static void main(String[] args) {
+
+        Payment upi = new UPI();
+        Payment creditCard = new CreditCard();
+        Payment wallet = new Wallet();
+
+        upi.pay(500);
+        creditCard.pay(1200);
+        wallet.pay(300);
+    }
+}

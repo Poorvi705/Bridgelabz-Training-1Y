@@ -1,0 +1,69 @@
+// Vehicle interface
+interface Vehicle {
+
+    // All vehicles must implement displaySpeed
+    void displaySpeed();
+
+    // Default method to display battery percentage
+    default void displayBattery() {
+        // Default implementation: non-electric vehicles don't show battery
+        System.out.println("Battery info not available for this vehicle.");
+    }
+}
+
+// Petrol Car
+class PetrolCar implements Vehicle {
+
+    private int speed;
+
+    PetrolCar(int speed) {
+        this.speed = speed;
+    }
+
+    @Override
+    public void displaySpeed() {
+        System.out.println("Petrol Car speed: " + speed + " km/h");
+    }
+
+    // Uses default displayBattery()
+}
+
+// Electric Car
+class ElectricCar implements Vehicle {
+
+    private int speed;
+    private int batteryPercentage;
+
+    ElectricCar(int speed, int batteryPercentage) {
+        this.speed = speed;
+        this.batteryPercentage = batteryPercentage;
+    }
+
+    @Override
+    public void displaySpeed() {
+        System.out.println("Electric Car speed: " + speed + " km/h");
+    }
+
+    @Override
+    public void displayBattery() {
+        System.out.println("Electric Car battery: " + batteryPercentage + "%");
+    }
+}
+
+// Main class
+public class SmartVehicleDashboard {
+
+    public static void main(String[] args) {
+
+        Vehicle petrolCar = new PetrolCar(120);
+        Vehicle electricCar = new ElectricCar(100, 85);
+
+        System.out.println("Petrol Car Dashboard:");
+        petrolCar.displaySpeed();
+        petrolCar.displayBattery(); // uses default method
+
+        System.out.println("\nElectric Car Dashboard:");
+        electricCar.displaySpeed();
+        electricCar.displayBattery(); // overridden method
+    }
+}

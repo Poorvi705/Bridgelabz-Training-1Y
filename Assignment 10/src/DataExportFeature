@@ -1,0 +1,71 @@
+// Interface with default method
+interface Exportable {
+
+    void exportToCSV(String data); // existing method
+
+    void exportToPDF(String data); // existing method
+
+    // New default method for JSON export
+    default void exportToJSON(String data) {
+        System.out.println("Exporting data to JSON: " + data);
+    }
+}
+
+// CSV exporter class
+class CSVExporter implements Exportable {
+
+    @Override
+    public void exportToCSV(String data) {
+        System.out.println("Exporting data to CSV: " + data);
+    }
+
+    @Override
+    public void exportToPDF(String data) {
+        System.out.println("CSVExporter cannot export to PDF.");
+    }
+
+    // Uses default exportToJSON method
+}
+
+// PDF exporter class
+class PDFExporter implements Exportable {
+
+    @Override
+    public void exportToCSV(String data) {
+        System.out.println("PDFExporter cannot export to CSV.");
+    }
+
+    @Override
+    public void exportToPDF(String data) {
+        System.out.println("Exporting data to PDF: " + data);
+    }
+
+    @Override
+    public void exportToJSON(String data) {
+        System.out.println("PDFExporter custom JSON export: " + data);
+    }
+}
+
+// Main class
+public class DataExportFeature {
+
+    public static void main(String[] args) {
+
+        Exportable csv = new CSVExporter();
+        Exportable pdf = new PDFExporter();
+
+        String reportData = "Sales Report 2026";
+
+        // CSV Exporter
+        csv.exportToCSV(reportData);
+        csv.exportToPDF(reportData);
+        csv.exportToJSON(reportData); // uses default method
+
+        System.out.println();
+
+        // PDF Exporter
+        pdf.exportToCSV(reportData);
+        pdf.exportToPDF(reportData);
+        pdf.exportToJSON(reportData); // uses overridden method
+    }
+}

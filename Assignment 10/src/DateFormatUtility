@@ -1,0 +1,31 @@
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+// Interface with static date formatting method
+interface DateFormatter {
+
+    // Static method to format a date into a given pattern
+    static String formatDate(LocalDate date, String pattern) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(pattern);
+        return date.format(formatter);
+    }
+}
+
+// Main class
+public class DateFormatUtility {
+
+    public static void main(String[] args) {
+
+        LocalDate today = LocalDate.now();
+
+        // Example formats
+        String format1 = "dd/MM/yyyy";
+        String format2 = "MMMM dd, yyyy";
+        String format3 = "yyyy-MM-dd";
+
+        System.out.println("Original date: " + today);
+        System.out.println("Formatted (dd/MM/yyyy): " + DateFormatter.formatDate(today, format1));
+        System.out.println("Formatted (MMMM dd, yyyy): " + DateFormatter.formatDate(today, format2));
+        System.out.println("Formatted (yyyy-MM-dd): " + DateFormatter.formatDate(today, format3));
+    }
+}

@@ -1,0 +1,51 @@
+// Interface with default method
+interface PaymentProcessor {
+
+    void pay(double amount); // existing method
+
+    // New default method for refunds
+    default void refund(double amount) {
+        System.out.println("Refund of $" + amount + " is processed (default implementation).");
+    }
+}
+
+// UPI payment class
+class UPIProcessor implements PaymentProcessor {
+
+    @Override
+    public void pay(double amount) {
+        System.out.println("Paid $" + amount + " using UPI.");
+    }
+
+    // Uses default refund method
+}
+
+// Credit Card payment class
+class CreditCardProcessor implements PaymentProcessor {
+
+    @Override
+    public void pay(double amount) {
+        System.out.println("Paid $" + amount + " using Credit Card.");
+    }
+
+    @Override
+    public void refund(double amount) {
+        System.out.println("Refund of $" + amount + " using Credit Card gateway.");
+    }
+}
+
+// Main class
+public class PaymentGatewayIntegration {
+
+    public static void main(String[] args) {
+
+        PaymentProcessor upi = new UPIProcessor();
+        PaymentProcessor creditCard = new CreditCardProcessor();
+
+        upi.pay(500);
+        upi.refund(200); // uses default method
+
+        creditCard.pay(1200);
+        creditCard.refund(500); // uses overridden method
+    }
+}
