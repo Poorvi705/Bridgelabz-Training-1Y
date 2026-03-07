@@ -1,0 +1,64 @@
+// Base class
+class Employee {
+
+    protected int empId;
+    protected String name;
+
+    // Constructor
+    Employee(int empId, String name) {
+        this.empId = empId;
+        this.name = name;
+    }
+
+    // Method to generate email
+    String generateEmail() {
+        String email = name.toLowerCase() + "@company.com";
+        return email;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{ID=" + empId + ", Name='" + name + "'}";
+    }
+}
+
+// Subclass Manager
+class Manager extends Employee {
+
+    private String department;
+
+    Manager(int empId, String name, String department) {
+        super(empId, name);
+        this.department = department;
+    }
+
+    @Override
+    String generateEmail() {
+        // Include department in email
+        String email = name.toLowerCase() + "." + department.toLowerCase() + "@company.com";
+        return email;
+    }
+
+    @Override
+    public String toString() {
+        return "Manager{ID=" + empId + ", Name='" + name + "', Department='" + department + "'}";
+    }
+}
+
+// Main class
+public class EmployeeManagementSystem {
+
+    public static void main(String[] args) {
+
+        // Employee object
+        Employee emp1 = new Employee(101, "Alice");
+        // Manager object
+        Employee mgr1 = new Manager(201, "Bob", "Sales");
+
+        System.out.println(emp1);
+        System.out.println("Email: " + emp1.generateEmail() + "\n");
+
+        System.out.println(mgr1);
+        System.out.println("Email: " + mgr1.generateEmail());
+    }
+}
