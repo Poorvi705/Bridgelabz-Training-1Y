@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0c6c0682-068d-4647-862c-af99f3f33d5a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/untitled1/src/ArrayExceptionExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/CustomExceptionExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/DivisionExamplee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/ExceptionPropagationExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/FileReaderExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/FinallyExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/InterestCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/NestedTryCatchExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled1/src/TryWithResourcesExample.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="3BfmXw6ZSroapsOEH4X8I0XLfGR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;exception-handling&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/BridgeLabs Training 1Y&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/BridgeLabs Training 1Y/untitled1/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="untitled" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="untitled" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0c6c0682-068d-4647-862c-af99f3f33d5a" name="Changes" comment="" />
+      <created>1774888543583</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1774888543583</updated>
+    </task>
+    <servers />
+  </component>
+</project>
