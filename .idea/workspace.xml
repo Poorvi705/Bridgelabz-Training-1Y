@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27abe4bb-35b1-43d6-b934-2daab28f9d27" name="Changes" comment="" />
+    <list default="true" id="27abe4bb-35b1-43d6-b934-2daab28f9d27" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assignment 18/src/EmployeeCLIManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment 18/src/EmployeeCRUDSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment 18/src/EmployeeConsoleApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment 18/src/EmployeeDBManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment 18/src/EmployeeDataApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment 18/src/EmployeeManagementApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment 18/src/EmployeeManagerApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment 18/src/EmployeeOperationsApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment 18/src/EmployeeRecordSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment 18/src/EmployeeSalaryManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment 18/src/EmployeeServiceApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment 18/src/EmployeeSystemApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,14 +48,28 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "regular-expressions",
+    "git-widget-placeholder": "jdbc",
     "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/BridgeLabs Training 1Y/Assignment 17/src/Main.java",
+    "last_opened_file_path": "C:/BridgeLabs Training 1Y",
+    "onboarding.tips.debug.path": "C:/BridgeLabs Training 1Y/Assignment 18/src/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="BridgeLabs Training 1Y" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="BridgeLabs Training 1Y" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="27abe4bb-35b1-43d6-b934-2daab28f9d27" name="Changes" comment="" />
